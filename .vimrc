@@ -109,7 +109,9 @@ set shiftwidth=2
 set smarttab
 " カーソルを行頭、行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
-" 構文毎に文字色を変化させる
+" クリップボード対応させる
+set clipboard=unnamed,autoselect
+"構文毎に文字色を変化させる
 syntax on
 " カラースキーマの指定
 colorscheme desert
