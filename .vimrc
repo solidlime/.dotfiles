@@ -124,6 +124,11 @@ highlight LineNr ctermfg=darkyellow
  " grep検索の実行後にQuickFix Listを表示する
  autocmd QuickFixCmdPost *grep* cwindow
  
+""""
+"NERDTree
+"""
+noremap <C-T> :NERDTree<CR>
+
  " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
  """"""""""""""""""""""""""""""
  " Unit.vimの設定
@@ -135,7 +140,7 @@ highlight LineNr ctermfg=darkyellow
  " ファイル一覧
  noremap <C-N> :Unite -buffer-name=file file<CR>
  " 最近使ったファイルの一覧
- noremap <C-Z> :Unite file_mru<CR>
+ noremap <C-X> :Unite file_mru<CR>
  " sourcesを「今開いているファイルのディレクトリ」とする
  noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
  " ウィンドウを分割して開く
