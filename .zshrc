@@ -133,3 +133,5 @@ function chpwd() { ls }
 
 # local zshrc load
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+source /etc/zsh_command_not_found
